@@ -5,7 +5,7 @@ plugins {
 }
 
 application {
-	mainClass.set("de.onecode.cube.server.MainKt")
+	mainClass.set("com.lexfury.kkon.MainKt")
 }
 
 ktor {
