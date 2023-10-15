@@ -1,0 +1,52 @@
+[versions]
+agp = "8.2.0-beta06"
+core-ktx = "1.12.0"
+activity-compose = "1.8.0"
+compose-plugin = "1.5.10-beta02"
+kotlin = "1.9.10"
+kotlinx-serialization = "1.6.0"
+kotlinx-collections-immutable = "0.3.6"
+kotlin-coroutine = "1.7.3"
+ktor = "2.3.5"
+logback = "1.4.11"
+touchlab-skie = "0.5.0"
+touchlab-kermit = "1.0.0"
+koin = "3.4.1"
+play-services = "18.1.0"
+google-maps = "3.1.0"
+google-maps-secrets = "2.0.1"
+jx-map-viewer = "2.5"
+
+[libraries]
+kotlin-coroutine-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlin-coroutine" }
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+kotlinx-collections-immutable = { group = "org.jetbrains.kotlinx", name = "kotlinx-collections-immutable", version.ref = "kotlinx-collections-immutable" }
+ktor-server-core = { group = "io.ktor", name = "ktor-server-core", version.ref = "ktor" }
+ktor-server-netty = { group = "io.ktor", name = "ktor-server-netty", version.ref = "ktor" }
+ktor-server-content-negotiation = { group = "io.ktor", name = "ktor-server-content-negotiation", version.ref = "ktor" }
+ktor-serialization-kotlinx-json = { group = "io.ktor", name = "ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-server-call-logging = { group = "io.ktor", name = "ktor-server-call-logging", version.ref = "ktor" }
+logback-classic = { group = "ch.qos.logback", name = "logback-classic", version.ref = "logback" }
+ktor-client-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
+ktor-client-okhttp = { group = "io.ktor", name = "ktor-client-okhttp", version.ref = "ktor" }
+ktor-client-darwin = { group = "io.ktor", name = "ktor-client-darwin", version.ref = "ktor" }
+ktor-client-content-negotiation = { group = "io.ktor", name = "ktor-client-content-negotiation", version.ref = "ktor" }
+koin = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
+google-maps = { group = "com.google.maps.android", name = "maps-compose", version.ref = "google-maps" }
+google-maps-utils = { group = "com.google.maps.android", name = "maps-compose-utils", version.ref = "google-maps" }
+google-play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "play-services" }
+touchlab-kermit = { group = "co.touchlab", name = "kermit", version.ref = "touchlab-kermit" }
+jx-map-viewer = { group = "org.jxmapviewer", name = "jxmapviewer2", version.ref = "jx-map-viewer" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+compose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
+multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+touchlab-skie = { id = "co.touchlab.skie", version.ref = "touchlab-skie" }
+ktor = { id = "io.ktor.plugin", version.ref = "ktor" }
+google-maps-secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "google-maps-secrets" }
