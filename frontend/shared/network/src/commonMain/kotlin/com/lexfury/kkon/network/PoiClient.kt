@@ -19,7 +19,7 @@ class PoiClient(
 
 	suspend fun getPois(): PointOfInterestResponse? = withContext(coroutineDispatcher) {
 		try {
-			val response = httpClient.get(" $baseUrl/vending-machines")
+			val response = httpClient.get(" $baseUrl/pois")
 			if (response.status == HttpStatusCode.OK) {
 				response.body<PointOfInterestResponse>()
 			} else {

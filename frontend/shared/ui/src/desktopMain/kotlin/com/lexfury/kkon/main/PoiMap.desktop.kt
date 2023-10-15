@@ -66,6 +66,7 @@ actual fun PoiMap(
 				}
 
 				addressLocation = GERMANY.toDesktopPosition()
+				zoom = 13
 			}
 		},
 		update = { mapViewer ->
@@ -73,7 +74,6 @@ actual fun PoiMap(
 			waypoints.forEach {
 				mapViewer.add(it.button)
 			}
-			mapViewer.zoomToBestFit(waypoints.map { it.position }.toSet(), .7)
 		},
 		modifier = modifier
 	)
