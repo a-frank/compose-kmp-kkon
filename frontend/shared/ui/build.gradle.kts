@@ -18,6 +18,15 @@ kotlin {
 			isStatic = true
 		}
 	}
+	js(IR) {
+		moduleName = "kkon-ui"
+		browser {
+			commonWebpackConfig(Action {
+				outputFileName = "kkon-ui.js"
+			})
+		}
+		binaries.executable()
+	}
 
 	sourceSets {
 		val commonMain = getByName("commonMain") {

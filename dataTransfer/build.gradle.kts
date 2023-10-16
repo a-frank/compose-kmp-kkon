@@ -8,6 +8,15 @@ kotlin {
 	iosSimulatorArm64()
 	iosArm64()
 	iosX64()
+	js(IR) {
+		moduleName = "kkon-data-transfer"
+		browser {
+			commonWebpackConfig(Action {
+				outputFileName = "kkon-data-transfer.js"
+			})
+		}
+		binaries.executable()
+	}
 
 	sourceSets {
 		getByName("commonMain") {

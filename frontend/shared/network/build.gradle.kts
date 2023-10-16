@@ -8,6 +8,15 @@ kotlin {
 	iosSimulatorArm64()
 	iosArm64()
 	iosX64()
+	js(IR) {
+		moduleName = "kkon-network"
+		browser {
+			commonWebpackConfig(Action {
+				outputFileName = "kkon-network.js"
+			})
+		}
+		binaries.executable()
+	}
 
 	sourceSets {
 		val commonMain = getByName("commonMain") {
@@ -39,5 +48,10 @@ kotlin {
 		getByName("iosX64Main").dependsOn(iosMain)
 		getByName("iosArm64Main").dependsOn(iosMain)
 		getByName("iosSimulatorArm64Main").dependsOn(iosMain)
+		getByName("jsMain") {
+			dependencies {
+				implementation(libs.ktor.client.js)
+			}
+		}
 	}
 }

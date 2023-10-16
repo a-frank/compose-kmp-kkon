@@ -7,6 +7,15 @@ kotlin {
 	iosSimulatorArm64()
 	iosArm64()
 	iosX64()
+	js(IR) {
+		moduleName = "kkon-pois"
+		browser {
+			commonWebpackConfig(Action {
+				outputFileName = "kkon-pois.js"
+			})
+		}
+		binaries.executable()
+	}
 
 	sourceSets {
 		val commonMain = getByName("commonMain") {
