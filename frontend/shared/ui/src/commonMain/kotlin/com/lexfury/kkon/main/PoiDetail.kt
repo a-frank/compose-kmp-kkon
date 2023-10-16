@@ -27,8 +27,7 @@ import com.lexfury.kkon.PointOfInterest
 fun PoiDetails(
 	pointOfInterest: PointOfInterest?,
 	modifier: Modifier = Modifier,
-
-	) {
+) {
 
 	Row(
 		modifier = modifier

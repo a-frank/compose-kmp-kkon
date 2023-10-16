@@ -9,7 +9,7 @@ val networkModule = module {
 
 	single {
 		PoiClient(
-			baseUrl = "",
+			baseUrl = "my.server.com",
 			httpClient = get(),
 			coroutineDispatcher = getNetworkDispatcher()
 		)
