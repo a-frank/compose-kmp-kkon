@@ -7,5 +7,5 @@ import kotlin.jvm.JvmName
 
 fun initKoin() =
 	startKoin {
-		modules(vendingMachinesModule)
+		modules(poisModule)
 	}

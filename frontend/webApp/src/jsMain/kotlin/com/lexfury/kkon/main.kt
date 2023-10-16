@@ -20,7 +20,7 @@ import org.koin.core.context.startKoin
 
 fun main() {
 	val koinApplication = startKoin {
-		modules(vendingMachinesModule)
+		modules(poisModule)
 	}
 	val repository = koinApplication.koin.get<PoiRepository>()
 

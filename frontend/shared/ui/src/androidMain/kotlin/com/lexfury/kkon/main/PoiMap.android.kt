@@ -51,7 +51,7 @@ actual fun PoiMap(
 
 	val items = remember(pointOfInterests) {
 		pointOfInterests.map { vendingMachine ->
-			VendingMachineClusterItem(
+			PoiClusterItem(
 				id = vendingMachine.id,
 				position = vendingMachine.coordinates.toGoogleLatLong(),
 				title = vendingMachine.name
@@ -75,7 +75,7 @@ actual fun PoiMap(
 	}
 }
 
-private class VendingMachineClusterItem(
+private class PoiClusterItem(
 	val id: String,
 	private val position: LatLng,
 	private val title: String,
